@@ -19,7 +19,7 @@ jobs:
     - name: Set up .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '5.0.x'
+        dotnet-version: '6.0.x'
         include-prerelease: true
 
     - name: Build with dotnet
@@ -53,5 +53,5 @@ jobs:
       with:
         app-name: 'nash-Website'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_f2ef040ffb2c4fe3ad3431da99e4a492 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_dd9741b8e91e415f94bbc7fcd9d4e67e }}
         package: .
